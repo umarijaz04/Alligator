@@ -1,0 +1,1314 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+  <!--<![endif]-->
+
+  <head>
+    <title>Alligator</title>
+    <meta charset="utf-8" />
+    <!--[if IE]>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <![endif]-->
+    <meta name="description" content="" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="-1" />
+
+    <meta name="theme-color" content="#1c6832" />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/font-awesome.css" />
+    <link rel="stylesheet" href="css/line-awesome.css" />
+    <link rel="stylesheet" href="css/main.css" class="color-switcher-link" />
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+    <!--[if lt IE 9]>
+      <script src="js/vendor/html5shiv.min.js"></script>
+      <script src="js/vendor/respond.min.js"></script>
+      <script src="js/vendor/jquery-1.12.4.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body class="pr-0">
+    <div class="preloader">
+      <div class="preloader_image pulse"></div>
+    </div>
+    <!-- get in touch modal -->
+    <div class="modal fade" id="getInTouch">
+      <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Get In Touch</h5>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-2"></div>
+              <div class="col-md-8 text-center modal-img">
+                <img src="./images/rainbow-tm.png" />
+              </div>
+              <div class="col-md-2"></div>
+            </div>
+            <div class="row">
+              <div class="col-md-2"></div>
+              <div class="col-md-8 text-center modal-heading">
+                Call Centre Agent
+              </div>
+              <div class="col-md-2"></div>
+            </div>
+            <div class="row">
+              <div class="col-md-2"></div>
+              <div class="col-md-8 text-center modal-subheading">
+                Please contact me, I’m interested in <br />
+                knowing more about this.
+              </div>
+              <div class="col-md-2"></div>
+            </div>
+            <div class="row">
+              <div class="col-md-1"></div>
+              <div class="col-md-10 text-center">
+                <form id="contact-form" class="getin-form">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control getin-control"
+                      id="InputCompanyName"
+                      name="InputCompanyName"
+                      placeholder="Company Name *"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control getin-control"
+                      id="InputFullName"
+                      name="InputFullName"
+                      placeholder="Full name *"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="email"
+                      class="form-control getin-control"
+                      id="InputEmail2"
+                      name="InputEmail2"
+                      placeholder="E-mail address *"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control getin-control"
+                      id="InputContactNumber"
+                      name="InputContactNumber"
+                      placeholder="Contact number *"
+                    />
+                  </div>
+                  <div class="mandatory-text">Mandatory Fields *</div>
+                  <div id="getInTouchRecaptchaDiv"></div>
+                  <div class="modal-note text-left">
+                    <p>
+                      Note, It may take up to 24 hours for us to respond to your
+                      request, however, <br />
+                      bear with us, we’re excited to provide you with more
+                      details.
+                    </p>
+                  </div>
+                  <div class="text-left" style="margin-bottom: 24px">
+                    <button
+                      type="submit"
+                      class="btn btn-contact"
+                      id="btncontact-me"
+                    >
+                      <span class="contact-text">Contact Me</span>
+                    </button>
+                    <button
+                      class="btn btn-outline-modal-cancel"
+                      id="btnGetInTouchCancel"
+                      data-dismiss="modal"
+                    >
+                      <span class="modal-cancel-text">Cancel</span>
+                    </button>
+                  </div>
+                </form>
+              </div>
+              <div class="col-md-1"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="getInTouchBLF">
+      <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Get In Touch</h5>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-2"></div>
+              <div class="col-md-8 text-center modal-img">
+                <img src="./images/rainbow-tm.png" />
+              </div>
+              <div class="col-md-2"></div>
+            </div>
+            <div class="row">
+              <div class="col-md-2"></div>
+              <div class="col-md-8 text-center modal-heading">
+                Busy Lamp Field
+              </div>
+              <div class="col-md-2"></div>
+            </div>
+            <div class="row">
+              <div class="col-md-2"></div>
+              <div class="col-md-8 text-center modal-subheading">
+                Please contact me, I’m interested in <br />
+                knowing more about this.
+              </div>
+              <div class="col-md-2"></div>
+            </div>
+            <div class="row">
+              <div class="col-md-1"></div>
+              <div class="col-md-10 text-center">
+                <form id="contact-form-blf" class="getin-form">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control getin-control"
+                      id="InputCompanyNameBLF"
+                      name="InputCompanyNameBLF"
+                      placeholder="Company Name *"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control getin-control"
+                      id="InputFullNameBLF"
+                      name="InputFullNameBLF"
+                      placeholder="Full name *"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="email"
+                      class="form-control getin-control"
+                      id="InputEmailBLF"
+                      name="InputEmailBLF"
+                      placeholder="E-mail address *"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control getin-control"
+                      id="InputContactNumberBLF"
+                      name="InputContactNumberBLF"
+                      placeholder="Contact number *"
+                    />
+                  </div>
+                  <div class="mandatory-text">Mandatory Fields *</div>
+                  <div id="getInTouchBLFRecaptchaDiv"></div>
+                  <div class="modal-note text-left">
+                    <p>
+                      Note, It may take up to 24 hours for us to respond to your
+                      request, however, <br />
+                      bear with us, we’re excited to provide you with more
+                      details.
+                    </p>
+                  </div>
+                  <div class="text-left" style="margin-bottom: 24px">
+                    <button
+                      type="submit"
+                      class="btn btn-contact"
+                      id="btncontact-me-blf"
+                    >
+                      <span class="contact-text">Contact Me</span>
+                    </button>
+                    <button
+                      class="btn btn-outline-modal-cancel"
+                      id="btnGetInTouchBLFCancel"
+                      data-dismiss="modal"
+                    >
+                      <span class="modal-cancel-text">Cancel</span>
+                    </button>
+                  </div>
+                </form>
+              </div>
+              <div class="col-md-1"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="getInTouchR">
+      <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Get In Touch</h5>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-2"></div>
+              <div class="col-md-8 text-center modal-img">
+                <img src="./images/rainbow-tm.png" />
+              </div>
+              <div class="col-md-2"></div>
+            </div>
+            <div class="row">
+              <div class="col-md-2"></div>
+              <div class="col-md-8 text-center modal-heading">
+                Rainbow Solutions
+              </div>
+              <div class="col-md-2"></div>
+            </div>
+            <div class="row">
+              <div class="col-md-2"></div>
+              <div class="col-md-8 text-center modal-subheading">
+                Please contact me, I’m interested in <br />
+                knowing more about this.
+              </div>
+              <div class="col-md-2"></div>
+            </div>
+            <div class="row">
+              <div class="col-md-1"></div>
+              <div class="col-md-10 text-center">
+                <form id="contact-form-r" class="getin-form">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control getin-control"
+                      id="InputCompanyNameR"
+                      name="InputCompanyNameR"
+                      placeholder="Company Name *"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control getin-control"
+                      id="InputFullNameR"
+                      name="InputFullNameR"
+                      placeholder="Full name *"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="email"
+                      class="form-control getin-control"
+                      id="InputEmailR"
+                      name="InputEmailR"
+                      placeholder="E-mail address *"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control getin-control"
+                      id="InputContactNumberR"
+                      name="InputContactNumberR"
+                      placeholder="Contact number *"
+                    />
+                  </div>
+                  <div class="mandatory-text">Mandatory Fields *</div>
+                  <div id="getInTouchRRecaptchaDiv"></div>
+                  <div class="modal-note text-left">
+                    <p>
+                      Note, It may take up to 24 hours for us to respond to your
+                      request, however, <br />
+                      bear with us, we’re excited to provide you with more
+                      details.
+                    </p>
+                  </div>
+                  <div class="text-left" style="margin-bottom: 24px">
+                    <button
+                      type="submit"
+                      class="btn btn-contact"
+                      id="btncontact-me-r"
+                    >
+                      <span class="contact-text">Contact Me</span>
+                    </button>
+                    <button
+                      class="btn btn-outline-modal-cancel"
+                      id="btnGetInTouchRCancel"
+                      data-dismiss="modal"
+                    >
+                      <span class="modal-cancel-text">Cancel</span>
+                    </button>
+                  </div>
+                </form>
+              </div>
+              <div class="col-md-1"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- get in touch send modal -->
+    <div class="modal fade" id="getInTouchSent">
+      <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Get In Touch</h5>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-2"></div>
+              <div class="col-md-8 text-center modal-heading">
+                We’ll Contact You Soon.
+              </div>
+              <div class="col-md-2"></div>
+            </div>
+            <div class="row">
+              <div class="col-md-1"></div>
+              <div
+                class="col-md-10 text-center modal-subheading sent-subheading"
+              >
+                Thank you for contacting us. Your request has been received
+                <br />
+                and we will contact you shortly. It could take up to 24 hours
+                for us to <br />
+                get back to you, however, well try our best to respond within a
+                <br />
+                couple of hours.
+              </div>
+              <div class="col-md-1"></div>
+            </div>
+            <div class="row">
+              <div class="col-md-1"></div>
+              <div class="col-md-10 text-center">
+                <button
+                  class="btn btn-outline-modal-close"
+                  data-dismiss="modal"
+                >
+                  <span class="modal-close-text">Close</span>
+                </button>
+              </div>
+              <div class="col-md-1"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="ajaxLoader"
+      class="modal fade bd-example-modal-lg"
+      data-backdrop="static"
+      data-keyboard="false"
+      tabindex="-1"
+    >
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <img src="images/Infinity.gif" width="50px" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- wrappers for visual page editor and boxed version of template -->
+    <div id="canvas" style="background-color: #dfdddd;">
+      <div id="box_wrapper" class="main-border">
+        <!-- template sections -->
+        <section id="Home" class="page_toplogo ls s-py-10 s-py-xl-25">
+          <div class="container">
+            <div class="row align-items-center justify-content-between">
+              <div class="col-12 col-md-3 logo-centered">
+                <a href="./" class="logo">
+                  <img src="./images/logo-dark.png" />
+                </a>
+                <div class="divider-20 divider-md-0"></div>
+              </div>
+              <div class="col-12 col-md-9">
+                <div class="toplogo-includes">
+                  <div class="media">
+                    <div class="media-body">
+                      <p>
+                        <a class="links-darkgrey" id="Features" href="#"
+                          >Features</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                  <div class="media">
+                    <div class="media-body">
+                      <p>
+                        <a class="links-darkgrey" id="FAQ" href="#">F.A.Q</a>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="media">
+                    <div class="media-body">
+                      <p>
+                        <a class="links-darkgrey" id="Contact" href="#"
+                          >Contact Us</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                  <div class="social-icons d-none d-xl-block">
+                    <a
+                      href="#"
+                      class="fa fa-linkedin border-icon rounded-icon"
+                      title="linkedin"
+                      target="blank"
+                    ></a>
+                    <a
+                      href="#"
+                      class="fa fa-facebook border-icon rounded-icon"
+                      title="facebook"
+                      target="blank"
+                    ></a>
+                    <span
+                      class="dropdown"
+                      style="margin-left: 3px"
+                      title="language"
+                      title="language"
+                    >
+                      <img
+                        class="dropdown-toggle"
+                        src="./images/globr-icon.png"
+                        id="dropdownMenuButton"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                        onmouseover="hover(this);"
+                        onmouseout="unhover(this);"
+                      />
+                      <svg height="35" width="20" style="cursor: default">
+                        <text
+                          fill="#2f2e2e"
+                          font-family="'Poppins', sans-serif"
+                          font-weight="300"
+                          font-size="12"
+                          letter-spacing=".926"
+                          style="text-transform: uppercase; direction: ltr"
+                        >
+                          <tspan x="0" y="16" id="ctry">gb</tspan>
+                        </text>
+                        <text
+                          fill="#2f2e2e"
+                          font-family="'Poppins', sans-serif"
+                          font-weight="300"
+                          font-size="12"
+                          letter-spacing=".926"
+                          style="text-transform: uppercase; direction: ltr"
+                        >
+                          <tspan x="0" y="29" id="lang">en</tspan>
+                        </text>
+                      </svg>
+                      <div
+                        class="dropdown-menu language-menu"
+                        aria-labelledby="dropdownMenuButton"
+                      >
+                        <a
+                          class="dropdown-item language-item"
+                          href="?ctry=gb&lang=en"
+                          ><img
+                            src="./images/flags2/gb-eng.png"
+                            width="25px"
+                            class="language-text"
+                          />
+                          <span> English </span>
+                        </a>
+                        <a
+                          class="
+                            dropdown-item
+                            language-item
+                            disabled disabled-link
+                          "
+                          href="?ctry=fr&lang=fr"
+                          ><img
+                            src="./images/flags2/fr.png"
+                            width="25px"
+                            class="language-text"
+                          />
+                          <span> French </span>
+                        </a>
+                        <a
+                          class="
+                            dropdown-item
+                            language-item
+                            disabled disabled-link
+                          "
+                          href="?ctry=de&lang=de"
+                          ><img
+                            src="./images/flags2/de.png"
+                            width="25px"
+                            class="language-text"
+                          />
+                          <span> German </span>
+                        </a>
+                        <a
+                          class="
+                            dropdown-item
+                            language-item
+                            disabled disabled-link
+                          "
+                          href="?ctry=it&lang=it"
+                          ><img
+                            src="./images/flags2/it.png"
+                            width="25px"
+                            class="language-text"
+                          />
+                          <span> Italian </span>
+                        </a>
+                        <a
+                          class="
+                            dropdown-item
+                            language-item
+                            disabled disabled-link
+                          "
+                          href="?ctry=es&lang=es"
+                          ><img
+                            src="./images/flags2/es.png"
+                            width="25px"
+                            class="language-text"
+                          />
+                          <span> Spanish </span>
+                        </a>
+                      </div>
+                    </span>
+                  </div>
+                  <button
+                    id="tell-me-more"
+                    class="btn with-arrow btn-slider sign-respon"
+                  >
+                    <span style="font-weight: 300"> Sign in </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="page_slider ds">
+          <div class="flexslider" data-nav="false">
+            <ul class="slides">
+              <li class="cover-image">
+                <img src="./images/slide04.png" />
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-12 col-lg-7">
+                      <div
+                        class="intro_layers_wrapper intro_text_top"
+                        style="top: 0"
+                      >
+                        <div class="intro_layers">
+                          <div
+                            class="intro_layer animate"
+                            data-animation="fadeInDown"
+                          >
+                            <div class="d-inline-block">
+                              <h3>
+                                <span
+                                  style="
+                                    font-family: 'Montserrat', sans-serif;
+                                    font-size: 36px;
+                                    font-weight: bold;
+                                  "
+                                >
+                                  Risk Management Software
+                                </span>
+                              </h3>
+                            </div>
+                          </div>
+                          <div
+                            class="intro_layer animate"
+                            data-animation="fadeInDown"
+                          >
+                            <div class="d-inline-block">
+                              <p class="remove-br">
+                                Mitigating risk doesn’t have to be <br />
+                                a frightning experience.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-12 col-lg-5">
+                      <div style="background-color: #fff; padding-bottom: 91px">
+                        <div class="row">
+                          <div class="col-0 col-lg-1"></div>
+                          <div class="col-12 col-lg-10">
+                            <h4 class="demonstration">
+                              Request a Demonstration of Alligator
+                            </h4>
+                          </div>
+                          <div class="col-0 col-lg-1"></div>
+                        </div>
+                        <div class="row">
+                          <div class="col-0 col-lg-1"></div>
+                          <div class="col-12 col-lg-10" style="padding: 0 30px">
+                            <form id="sign" class="sign-form">
+                              <div class="form-group frm-group">
+                                <label class="sign-label" for="name"
+                                  >Full Name<i
+                                    class="las la-asterisk as-custom"
+                                  ></i
+                                ></label>
+                                <input
+                                  type="text"
+                                  class="form-control sign-control"
+                                  id="InputName"
+                                  name="InputName"
+                                />
+                              </div>
+                              <div class="form-group frm-group">
+                                <label class="sign-label" for="name"
+                                  >Email Address<i
+                                    class="las la-asterisk as-custom"
+                                  ></i
+                                ></label>
+                                <input
+                                  type="email"
+                                  class="form-control sign-control"
+                                  id="InputEmail"
+                                  name="InputEmail"
+                                />
+                              </div>
+                              <div class="form-group frm-group">
+                                <label class="sign-label" for="name"
+                                  >Company<i
+                                    class="las la-asterisk as-custom"
+                                  ></i
+                                ></label>
+                                <input
+                                  type="text"
+                                  class="form-control sign-control"
+                                  id="InputCompany"
+                                  name="InputCompany"
+                                />
+                              </div>
+                              <div class="form-group frm-group">
+                                <label class="sign-label" for="name"
+                                  >Telephone Number<i
+                                    class="las la-asterisk as-custom"
+                                  ></i
+                                ></label>
+                                <input
+                                  type="text"
+                                  class="form-control sign-control"
+                                  id="InputTelephone"
+                                  name="InputTelephone"
+                                />
+                              </div>
+                              <button
+                                id="sign-request"
+                                type="submit"
+                                class="btn with-arrow btn-dark-request"
+                              >
+                                <span
+                                  style="
+                                    font-weight: normal;
+                                    padding: 9px 10px;
+                                    font-size: 17px;
+                                  "
+                                  >REQUEST DEMO
+                                </span>
+                              </button>
+                            </form>
+                          </div>
+                          <div class="col-0 col-lg-1"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="features" class="ls ms s-py-55 s-py-lg-95 s-py-xl-105">
+          <div class="container" style="padding-bottom: 155px">
+            <div class="row">
+              <div class="offset-lg-2 col-lg-8 text-center card-head">
+                <h4 class="special-heading">
+                  <span id="content1">Take control of the</span> risks to your
+                  business
+                </h4>
+                <div class="divider-10 divider-lg-10"></div>
+              </div>
+
+              <div class="container">
+                <div class="row text-center">
+                  <div class="col-md-12 col-lg-4">
+                    <img src="./images/box-icon.png" />
+                    <h4 class="box-heading">Create & Manage Risk Registers</h4>
+                    <p class="box-detail">
+                      Create multiple risk registers, enabling you <br />
+                      to separate and prioritise your risks by <br />
+                      category or department.
+                    </p>
+                  </div>
+                  <div class="spacer"></div>
+                  <div class="col-md-12 col-lg-4">
+                    <img src="./images/globe-icon.png" />
+                    <h4 class="box-heading">
+                      Prioritise Risks According to Urgency
+                    </h4>
+                    <p class="box-detail">
+                      Arrange your mitigation priorities by using Alligator’s
+                      <br />
+                      unique formula to prioritise your risks, ensuring that
+                      <br />
+                      you attend to the most urgent risk first.
+                    </p>
+                  </div>
+                  <div class="spacer"></div>
+                  <div class="col-md-12 col-lg-4">
+                    <img src="./images/puzzle-icon.png" />
+                    <h4 class="box-heading">
+                      Implement Measures to Reduce Risk
+                    </h4>
+                    <p class="box-detail">
+                      Implement mitigation measures, enabling <br />
+                      you to to reduce the probability and impact <br />
+                      of the risks to your business.
+                    </p>
+                  </div>
+                </div>
+                <div class="divider-30 divider-lg-80"></div>
+                <div class="row text-center">
+                  <div class="col-md-12 col-lg-4">
+                    <img src="./images/magnifying-glass.png" />
+                    <h4 class="box-heading">Monitor Your Responsibilities</h4>
+                    <p class="box-detail">
+                      Track risks that you created as well as those <br />
+                      shared with you and access the risks directly <br />
+                      from your user dashboard.
+                    </p>
+                  </div>
+                  <div class="spacer"></div>
+                  <div class="col-md-12 col-lg-4">
+                    <img src="./images/dashboard.png" />
+                    <h4 class="box-heading">
+                      Access Intuitive Risk Dashboards
+                    </h4>
+                    <p class="box-detail">
+                      Gain clarity and confidence when taking
+                      management decisions by using graphical dashboards to
+                      obtain a global understanding
+                      your business risk.
+                    </p>
+                  </div>
+                  <div class="spacer"></div>
+                  <div class="col-md-12 col-lg-4">
+                    <img src="./images/calendar.png" />
+                    <h4 class="box-heading">Schedule Risk Reviews</h4>
+                    <p class="box-detail">
+                      Risks can change over time. Alligator enables <br />
+                      you to schedule when a risk is due for review <br />
+                      and to receive alerts to remind you.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="mobile-phone">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 col-lg-6">
+                <img src="./images/mobile-laptop-monitor-phone.png" />
+                <div class="divider-60 divider-lg-0"></div>
+              </div>
+              <div class="col-md-12 col-lg-6">
+                <div class="card-body">
+                  <div class="d-inline-block">
+                    <h3 class="vsuite">
+                      Don’t just prioritise your risks, <br />
+                      Understand the financial impact.
+                    </h3>
+                  </div>
+                  <p class="card-text look-no">
+                    Alligator enables you to clearly prioritise your business
+                    risks, <br />
+                    not only showing you the risks that need to be dealt with
+                    first, but <br />
+                    also which will have the biggest financial impact to your
+                    business.
+                  </p>
+                  <a href="request.html" class="btn with-arrow btn-dark">
+                    <span
+                      style="
+                        font-weight: normal;
+                        padding: 9px 10px;
+                        font-size: 17px;
+                      "
+                      >REQUEST FREE TRIAL
+                    </span>
+                  </a>
+                </div>
+                <div class="divider-60 divider-lg-0"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="faq" class="ls ms s-py-55 s-py-lg-95 s-py-xl-102">
+          <div class="container" style="padding-bottom: 78px">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="row">
+                  <div class="col-lg-8">
+                    <h4 class="special-heading">Frequently Asked Questions</h4>
+                  </div>
+                  <div
+                    class="col-lg-4"
+                    style="text-align: end; padding-top: 15px"
+                  >
+                    <span id="expand-all" class="faq-links">Expand all</span>
+                    <span style="margin: 0px 5px; color: #adadad">|</span>
+                    <span id="collapse-all" class="faq-links"
+                      >Collapse all</span
+                    >
+                  </div>
+                </div>
+                <hr />
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-6">
+                <h3 class="faq-headings">General</h3>
+                <div class="accordion" id="accordionGeneral">
+                  <div class="card">
+                    <div class="faq-head" id="generalOne">
+                      <h2
+                        class="mb-0 collapsed card-title"
+                        data-toggle="collapse"
+                        data-target="#collapseGeneralOne"
+                      >
+                        What is Alligator software?
+                      </h2>
+                    </div>
+                    <div id="collapseGeneralOne" class="collapse card-collapse">
+                      <div class="card-body">
+                        Alligator provides comprehensive risk management for
+                        small, medium and enterprise businesses. Unlike other
+                        risk systems, Alligator doesn't just organise risks in
+                        to high, medium, and low, it provides unique algorithms
+                        to prioritise each individual risk as well as showing
+                        their financial impact.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="faq-head" id="generalTwo">
+                      <h2
+                        class="mb-0 collapsed card-title"
+                        data-toggle="collapse"
+                        data-target="#collapseGeneralTwo"
+                      >
+                        Will my business profit from using Alligator?
+                      </h2>
+                    </div>
+                    <div id="collapseGeneralTwo" class="collapse card-collapse">
+                      <div class="card-body"></div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="faq-head" id="generalThree">
+                      <h2
+                        class="mb-0 collapsed card-title"
+                        data-toggle="collapse"
+                        data-target="#collapseGeneralThree"
+                      >
+                        Can I trial Alligator before committing to using the
+                        software?
+                      </h2>
+                    </div>
+                    <div
+                      id="collapseGeneralThree"
+                      class="collapse card-collapse"
+                    >
+                      <div class="card-body"></div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="faq-head" id="generalFour">
+                      <h3 class="mb-0 collapsed card-title-dark">
+                        View all questions
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 faq-col">
+                <h3 class="faq-headings">Deployment</h3>
+                <div class="accordion" id="accordionDeployment">
+                  <div class="card">
+                    <div class="faq-head" id="deploymentOne">
+                      <h2
+                        class="mb-0 collapsed card-title"
+                        data-toggle="collapse"
+                        data-target="#collapseDeploymentOne"
+                      >
+                        I don’t want to manage any hardware., can I use
+                        Alligator via SaaS?
+                      </h2>
+                    </div>
+                    <div
+                      id="collapseDeploymentOne"
+                      class="collapse card-collapse"
+                    >
+                      <div class="card-body"></div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="faq-head" id="deploymentTwo">
+                      <h2
+                        class="mb-0 collapsed card-title"
+                        data-toggle="collapse"
+                        data-target="#collapseDeploymentTwo"
+                      >
+                        Can I install Alligator my premises and store my data
+                        locally?
+                      </h2>
+                    </div>
+                    <div
+                      id="collapseDeploymentTwo"
+                      class="collapse card-collapse"
+                    >
+                      <div class="card-body"></div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="faq-head" id="deploymentThree">
+                      <h2
+                        class="mb-0 collapsed card-title"
+                        data-toggle="collapse"
+                        data-target="#collapseDeploymentThree"
+                      >
+                        Can I connect Alligator to my existing active directory?
+                      </h2>
+                    </div>
+                    <div
+                      id="collapseDeploymentThree"
+                      class="collapse card-collapse"
+                    >
+                      <div class="card-body"></div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="faq-head" id="deploymentFour">
+                      <h3 class="mb-0 collapsed card-title-dark">
+                        View all questions
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Row Two -->
+            <div class="row faq-row" >
+              <div class="col-lg-6">
+                <h3 class="faq-headings">Software Licensing</h3>
+                <div class="accordion" id="accordionSoftware">
+                  <div class="card">
+                    <div class="faq-head" id="softwareOne">
+                      <h2
+                        class="mb-0 collapsed card-title"
+                        data-toggle="collapse"
+                        data-target="#collapseSoftwareOne"
+                      >
+                        How many risks can I manage via Alligator?
+                      </h2>
+                    </div>
+                    <div
+                      id="collapseSoftwareOne"
+                      class="collapse card-collapse"
+                    >
+                      <div class="card-body"></div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="faq-head" id="softwareTwo">
+                      <h2
+                        class="mb-0 collapsed card-title"
+                        data-toggle="collapse"
+                        data-target="#collapseSoftwareTwo"
+                      >
+                        How many users can access Alligator?
+                      </h2>
+                    </div>
+                    <div
+                      id="collapseSoftwareTwo"
+                      class="collapse card-collapse"
+                    >
+                      <div class="card-body"></div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="faq-head" id="softwareThree">
+                      <h2
+                        class="mb-0 collapsed card-title"
+                        data-toggle="collapse"
+                        data-target="#collapseSoftwareThree"
+                      >
+                        Can I use Alligator to manage risks for mulitple
+                        offices?
+                      </h2>
+                    </div>
+                    <div
+                      id="collapseSoftwareThree"
+                      class="collapse card-collapse"
+                    >
+                      <div class="card-body"></div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="faq-head" id="softwareFour">
+                      <h3 class="mb-0 collapsed card-title-dark">
+                        View all questions
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 faq-col">
+                <h3 class="faq-headings">Security</h3>
+                <div class="accordion" id="accordionSecurity">
+                  <div class="card">
+                    <div class="faq-head" id="securityOne">
+                      <h2
+                        class="mb-0 collapsed card-title"
+                        data-toggle="collapse"
+                        data-target="#collapseSecurityOne"
+                      >
+                        Will all of my data be encrypted at rest?
+                      </h2>
+                    </div>
+                    <div
+                      id="collapseSecurityOne"
+                      class="collapse card-collapse"
+                    >
+                      <div class="card-body"></div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="faq-head" id="securityTwo">
+                      <h2
+                        class="mb-0 collapsed card-title"
+                        data-toggle="collapse"
+                        data-target="#collapseSecurityTwo"
+                      >
+                        Other than my users, will anyone else be able to access
+                        my data,?
+                      </h2>
+                    </div>
+                    <div
+                      id="collapseSecurityTwo"
+                      class="collapse card-collapse"
+                    >
+                      <div class="card-body"></div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="faq-head" id="securityThree">
+                      <h2
+                        class="mb-0 collapsed card-title"
+                        data-toggle="collapse"
+                        data-target="#collapseSecurityThree"
+                      >
+                        Is Alligator hosted in a secure data centre?
+                      </h2>
+                    </div>
+                    <div
+                      id="collapseSecurityThree"
+                      class="collapse card-collapse"
+                    >
+                      <div class="card-body"></div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="faq-head" id="securityFour">
+                      <h3 class="mb-0 collapsed card-title-dark">
+                        View all questions
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <footer id="contact" class="footer-container">
+          <div class="container">
+            <div class="row footer-content">
+              <div class=" col-lg-2 footer-col foot">
+                <a href="./" class="footer-link">
+                  <img class="footer-logo" src="./images/logo-grey.png" />
+                </a>
+                <img src="./images/divider.png" class="alligator-divider" />
+              </div>
+              <div class="col-lg-2 footer-col foot">
+                <a
+                href="http://gdandd.co.uk/"
+                target="_blank"
+                class="footer-link"
+                >gdandd.co.uk</a
+                >
+                <img src="./images/divider.png" class="alligator-divider" />
+              </div>
+              <div class="col-lg-2 footer-col foot">
+                <a href="mailto:enquiries@gdandd.co.uk" class="footer-link"
+                  >enquiries@gdandd.co.uk</a
+                >
+                <img src="./images/divider.png" class="alligator-divider" />
+              </div>
+              <div class="col-lg-2 footer-col foot">
+                <a href="tel:+442030960787" class="footer-link"
+                  >+44(0)20 30960787</a
+                >
+                <img src="./images/divider.png" class="alligator-divider" />
+              </div>
+            </div>
+            <div class="row footer-content" style="padding-top: 25px !important;">
+              <div class="col-lg-3 foot">
+                <span class="footer-link"
+                  >(c) copyright 2015-2021 GD &amp; D Limited</span
+                >
+                <img src="./images/divider.png" class="alligator-divider" />
+              </div>
+              <div class="col-lg-6 footer-col foot">
+                <span class="footer-link no-border">
+                  Harlow Enterprise Hub, Kao Hockham Building, Edinburgh Way,
+                  Harlow, Essex CM20 2NQ
+                </span>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+      <!-- eof #box_wrapper -->
+    </div>
+    <!-- eof #canvas -->
+
+    <script src="js/compressed.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+    <script
+      src="https://www.google.com/recaptcha/api.js?onload=loadCaptcha&render=explicit"
+      async
+      defer
+    ></script>
+    <script type="text/javascript">
+      // $("#generalFour").click(function () {
+      //   $("#accordionGeneral .card .card-collapse").collapse("show");
+      // });
+
+      // $("#deploymentFour").click(function () {
+      //   $("#accordionDeployment .card .card-collapse").collapse("show");
+      // });
+
+      // $("#softwareFour").click(function () {
+      //   $("#accordionSoftware .card .card-collapse").collapse("show");
+      // });
+
+      // $("#securityFour").click(function () {
+      //   $("#accordionSecurity .card .card-collapse").collapse("show");
+      // });
+
+      $("#expand-all").click(function () {
+        $("#accordionGeneral .card .card-collapse").collapse("show");
+        $("#accordionDeployment .card .card-collapse").collapse("show");
+        $("#accordionSoftware .card .card-collapse").collapse("show");
+        $("#accordionSecurity .card .card-collapse").collapse("show");
+      });
+
+      $("#collapse-all").click(function () {
+        $("#accordionGeneral .card .card-collapse").collapse("hide");
+        $("#accordionDeployment .card .card-collapse").collapse("hide");
+        $("#accordionSoftware .card .card-collapse").collapse("hide");
+        $("#accordionSecurity .card .card-collapse").collapse("hide");
+      });
+
+      $(document).ready(function () {
+        SendEmail = async (formData) => {
+          await fetch("https://api.vurella.com/api/register", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(formData),
+          })
+            .then((response) => response.text())
+            .then((data) => {
+              if (data.replace(/['"]+/g, "") === "OK") {
+                //do something
+
+              } else {
+                alert(data.replace(/['"]+/g, ""));
+                $("#sign").prop("disabled", false);
+              }
+              console.log("Success:", data);
+            })
+            .catch((error) => {
+              console.error("Error:", error);
+              $("#register-submit").prop("disabled", false);
+            });
+        };
+
+        $("#sign").on("submit", (e) => {
+          if ($("#InputName").val() == "") {
+            $("#InputName").css("border-color", "#bf1e2d");
+          } else {
+            $("#InputName").css("border-color", "#126d36");
+          }
+          if ($("#InputEmail").val() == "") {
+            $("#InputEmail").css("border-color", "#bf1e2d");
+          } else {
+            $("#InputEmail").css("border-color", "#126d36");
+          }
+          if ($("#InputCompany").val() == "") {
+            $("#InputCompany").css("border-color", "#bf1e2d");
+          } else {
+            $("#InputCompany").css("border-color", "#126d36");
+          }
+          if ($("#InputTelephone").val() == "") {
+            $("#InputTelephone").css("border-color", "#bf1e2d");
+          } else {
+            $("#InputTelephone").css("border-color", "#126d36");
+          }
+
+          // form contact submit
+          if (
+            $("#InputName").val() != "" &&
+            $("#InputEmail").val() != "" &&
+            $("#InputCompany").val() != "" &&
+            $("#InputTelephone").val() != ""
+          ) {
+            let formData = {
+              fullName: $("#InputName").val(),
+              email: $("#InputEmail").val(),
+              company: $("#InputCompany").val(),
+              telephone: $("#InputTelephone").val(),
+            };
+            $("#sign").prop("disabled", true);
+            SendEmail(formData);
+          }
+
+          e.preventDefault();
+        });
+      });
+    </script>
+  </body>
+</html>
